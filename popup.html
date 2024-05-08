@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Domain Tab Groups</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .group {
+            animation: fadeIn 0.5s;
+        }
+        /* Add some custom styles */
+        body {
+            background-color: #f8f9fa;
+            width: 400px; /* Set the width */
+            height: 600px; /* Set the height */
+            overflow-y: auto; /* Add a scrollbar if the content is taller than the height */
+        }
+        .card {
+            box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body class="p-3">
+    <h1 class="mb-3">Domain Tab Groups</h1>
+    <p class="mb-3">Click the button below to group tabs by domain names.</p>
+    <button id="groupTabsButton" class="btn btn-primary mb-3">Group Tabs</button>
+    <div id="groups"></div>
+    <script src="popup.js"></script>
+</body>
+</html>

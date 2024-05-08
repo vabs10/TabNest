@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "TabNest",
+    "version": "1.0",
+    "description": "Groups tabs by their domain names for better organization.",
+    "permissions": ["tabs", "activeTab", "tabGroups", "contextMenus", "storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon":"logo.png"
+    },
+    "icons":{
+        "128":"logo.png"
+    }
+}
